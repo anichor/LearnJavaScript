@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014/08/13, 11:23:03
+    Author     : Anisul
+*/
+
+/*
+.border_selection {
+    border: 2px solid red;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 840px;
+    background-color: #b0e0e6;
+}
+
+.left {
+    position: absolute;
+    left: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+.div_style_main {
+    position: absolute;
+    right: 20px;
+    border: 2px solid #a2a2a2;
+    background: white;
+    width: 840px;
+    height: 594px;
+}
+.div_style_child_left {
+    width: 45%;
+    height: 95%;
+    padding-top: 2%;
+    margin: 10px;
+    float: left;
+    clear: left;
+}
+.div_style_divider {
+    position: absolute;
+    left: 50%;
+    border: 1px darkgrey dashed;
+    height: 594px;
+}
+
+.div_style_child_right {
+    width: 45%;
+    height: 95%;
+    margin-right: 20px;
+    float: right;
+    clear: right;
+}
+
+.div_style_child_heading {
+    position: relative;
+    alignment-adjust: auto;
+    left: -129px;
+    top: -1px;
+    width: 120px;
+    height: 18px;
+    border: 1px solid black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.div_style_child {
+    width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.table_style {
+    alignment-adjust: central;
+    border: 0px;
+}
+
+.table_small {
+    height: 15px;
+    width: 240px;
+    margin-top: 3px;
+    margin-left: 145px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+p
+{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+div
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+form.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftform
+{
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+button.hide
+{
+    display: none;
+}
+#appid {
+
+}
+*/

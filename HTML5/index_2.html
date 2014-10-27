@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Learn Web Development!</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Web development learning">
+        <meta name = "author" content = "Anisul Hoque">
+        <link rel = "stylesheet" type = "text/css" href = "style/sample_style.css">
+    </head>
+
+    <body bgcolor = "#eaeded" onload="loadStart()">
+        <form id = "fs-container" class = "leftform">
+            <table class ="table_style">
+                <tr>
+                    <td align = "left">
+                        <input type = "button" id = "button_id" onclick = "gotoPrev()" name = "prev" value = "<<">
+                        <input type = "button" onclick = "gotoNext()" name = "next" value = ">>">
+                    </td>
+                    <td align = "center">
+                        <A HREF = "https://docs.google.com/presentation/d/1kdAOmayX8E3z5tqlK4gELAGXz_CnuTljmM0UVeu6hXc/edit?usp=sharing" onClick = "alert('Thanks for downloading the presentation!')">Presentation</A>
+                    </td>
+                    <td align = "right">
+                        <input type = "button" id = "button_print" onclick = "print()" name = "print" value = "Print">
+                        <input type = "button" id = "button_fullscreen" onclick = "enterFullscreen()" name = "fullscreen" value = "Full Screen">
+                    </td>
+                </tr>
+            </table>
+            <canvas id="can" width="396" height="200" style="border:2px solid;"></canvas>
+            <textarea name = "textinput" rows = "15" cols = "500" maxlength = "5" style = "width: 394px; height: 185px; resize: none"></textarea>
+        </form>
+        <div id = "container" class = "div_style_main">
+            <div id = "left" class = "div_style_child_left">
+                <div id = "id5" class = "div_style_child" style = "height: 18%">
+                    <div class = "div_style_child_heading">Background</div>
+                    <!-- 200 letters -->
+                </div>
+                <div id = "id6" class = "div_style_child" style = "height: 25%">
+                    <div class = "div_style_child_heading">Current Situation</div>
+                </div>
+                <div id = "id7" class = "div_style_child" style = "height: 22%">
+                    <div class = "div_style_child_heading">Goal</div>
+                    <!-- 200 letters -->
+                </div>
+                <div id = "id8" class = "div_style_child" style = "height: 27%">
+                    <div class = "div_style_child_heading">Analysis</div>
+                    <!-- 320 letters -->
+                </div>
+            </div>
+            <div id = "divider" class = "div_style_divider">
+                
+            </div>
+            <div id = "right" class = "div_style_child_right">
+                    <table class = "table_small">
+                        <tr>
+                            <td id = "id1" class="table_small"> </td>
+                            <td id = "id2" class="table_small"> </td>
+                            <td id = "id3" class="table_small"> </td>
+                            <td id = "id4" class="table_small"> </td>
+                        </tr>
+                    </table>
+                <div id = "id9" class = "div_style_child" style = "height: 32%">
+                    <div class = "div_style_child_heading">Counter Measures</div>
+                    <!-- 420 letters -->
+                </div>
+                <div id = "id10" class = "div_style_child" style = "height: 30%">
+                    <div class = "div_style_child_heading">Action Plan</div>
+                    <!-- 400 letters -->
+                </div>
+                <div id = "id11" class = "div_style_child" style = "height: 180px">
+                    <div class = "div_style_child_heading">Follow Up</div>
+                    <!-- 420 letters -->
+                </div>
+            </div>
+        </div>
+    
+    <script src = "lib/jquery/jquery-2.1.1.js"></script>
+    <script src = "lib/backbone/underscore-min.js"></script>
+    <script src = "lib/backbone/backbone-min.js"></script>
+
+    <script src = "script/page_container.js"></script>
+    <script src = "script/sample_js.js"></script>
+    <script src = "storage/sample_json.js"></script>
+    <script src = "script/drawJS.js"></script>
+    </body>
+</html>

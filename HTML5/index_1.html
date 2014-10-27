@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Learn Web Development!</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Web development learning">
+        <meta name = "author" content = "Anisul Hoque">
+        <link rel = "stylesheet" type = "text/css" href = "style/sample_style.css">
+    </head>
+    <body onload="loadStart()">
+        <p>If you see this page, the configuration setup is successful.</p>
+        <p><em>Thank you for joining the session.</em></p>
+        <A HREF = "https://docs.google.com/presentation/d/1kdAOmayX8E3z5tqlK4gELAGXz_CnuTljmM0UVeu6hXc/edit?usp=sharing" onClick = "alert('Thanks for downloading the presentation!')">Download The Presentation</A>
+    
+        <hr>
+        <div id = "container" style = "width: 840px; height: 594px; background-color: #eaeded">
+            <h1 id = "intro" style = "display: block">Lession 1 : HTML Introduction</h1>
+            <div id = "page_container">
+                <div id = "link">
+                    <a href = "http://www.w3schools.com">This is a link</a>
+                    <iframe src="http://www.w3schools.com" width="200" height="100"></iframe>
+                    <!-- Now Obsolete -->
+                    <applet name = "appname" id = "appid" code = "HelloWorld.class" width = "300" height = "100"></applet>
+                    <!-- Use this to run in the command prompt-->
+                    <!-- <object id = "appid" data = "HelloWorld.class" width = "300" height = "100"></object> -->
+                    <!-- <embed id = "appidi" src = "HelloWorld.class" width = "50" height = "100"> -->
+                </div>
+                <img src = "img/sample_image.png" alt = "" width="150" height="50"/>
+                <table border ="1" style = "width: 300px">
+                    <tr>
+                        <td>Text1</td>
+                        <td align = "center">value1</td>
+                    </tr>
+                    <tr>
+                        <td>Text2</td>
+                        <td align = "center">value2</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>Item1</li>
+                    <li>Item2</li>
+                </ul>
+            </div>
+            <p id = "endo"></p>
+        </div>
+        <form class = "center" style = "width: 800px">
+            <input type = "button" id = "button_id" onclick = "gotoPrev()" name = "prev" value = "<<">
+            <input type = "text" name = "sample_text">
+            <input type = "button" onclick = "gotoNext()" name = "next" value = ">>">
+            <input type = "button" id = "console_id" value = "Console" onclick = "writeToConsole()">
+            <input type = "button" id = "applet_id" value = "Java" onclick = "getJava()">
+            <input type = "button" id = "global_id" name = "prev" value = "Test JQuery" style = "display: none">
+        </form>
+        <hr>
+    
+    <script src="lib/jquery/jquery-2.1.1.js"></script>
+    <script src="lib/backbone/underscore-min.js"></script>
+    <script src="lib/backbone/backbone-min.js"></script>
+
+    <script src="script/page_container.js"></script>
+    <script src="script/sample_js.js"></script>
+    <script src="storage/sample_json.js"></script>
+    </body>
+</html>

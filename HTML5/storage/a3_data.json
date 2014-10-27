@@ -1,0 +1,16 @@
+[
+{
+"Name" : "Alfreds Futterkiste",
+"email" : "alfut",
+"date" : "09/05",
+"place" : "Bratis",
+"title" : "Reduction of paper usage",
+"background" : "Write some background.",
+"current_situation" : "Current state.",
+"goal" : "What is the goal?",
+"analysis" : "Have you done any analysis?",
+"counter_measures" : "What counter measures are taken?",
+"action_plan" : "Next action plan",
+"follow_up" : "This is the end."
+}
+]

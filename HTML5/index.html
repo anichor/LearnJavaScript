@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Learn Web Development!</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Web development learning">
+        <meta name = "author" content = "Anisul Hoque">
+        <link rel = "stylesheet" type = "text/css" href = "style/learn_style.css">
+        <link href="css/dialog.css" rel="stylesheet">
+        <link href="style/jquery-ui.css" rel="stylesheet">
+    </head>
+    <body bgcolor = "#eaeded" onload="loadStart()" style="font-family: Trebuchet MS, Helvetica, sans-serif; cursor: no-drop">
+        <div ng-app="" ng-controller="inputController" style="alignment-adjust: central; padding: 2px; margin: auto; height: 596px; width: 1250px;">
+            <div style="width: 400px; height: 594px; margin-left: 0px; margin-right: auto; display: block; float: left;">
+                <div style="display: block; margin-left: 25px; margin-right: auto; height: 30px;">
+                    <button onclick="gotoPrev()" style="width: 30px; height: 20px; font-size: 10px;" name="button_<<">&lt;&lt;</button>
+                    <button onclick="gotoNext()" style="width: 30px; height: 20px; font-size: 10px;" name="button_>>">>></button>
+                    <A HREF = "https://docs.google.com/presentation/d/1kdAOmayX8E3z5tqlK4gELAGXz_CnuTljmM0UVeu6hXc/edit?usp=sharing" onClick = "alert('Thanks for downloading the presentation!')">Presentation</A>
+                    <button style="width: 40px; height: 20px; font-size: 10px;" name="button_print">Print</button>
+                    <button style="width: 50px; height: 20px; font-size: 10px;" name="button_preview">Preview</button>
+                    <button style="width: 40px; height: 20px; font-size: 10px;" name="button_clear">Clear</button>
+                    <div id="dialog" title="Login">
+                        <form action="" method="post">
+                            <input id="name" name="name" type="text" placeholder="User Name">
+                            <input id="email" name="email" type="text" placeholder="E-Mail">
+                            <input id="submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <button style="width: 40px; height: 20px; font-size: 10px;" name="button" id="button_user">Guest</button>
+                </div>
+                <p></p>
+                <textarea id="text_input" onkeyup="setInputText()" placeholder="8 Chars" ng-model="textmodel" rows = "15" cols = "500" maxlength = "8" style = "border:2px solid; width: 392px; height: 220px; resize: none"></textarea>
+                <canvas id="canvas_input" width="396" height="310" style="border:2px solid;"></canvas>
+            </div>
+            <div style="width: 840px; height: 594px; background: white; margin-left: auto; margin-right: 0px; display: block; float: right;">
+                <div style="width: 400px; height: 594px; padding-left: 8px; padding-top: 4px; margin-left: 0px; margin-right: auto; display: block; float: left;">
+                    <div style="width: 388px; height: 30px; display: block; font-size: 14px">
+                        <div style="width: 40px; height: 20px; margin-top: 4px; display: block; float: left; font-size: 16px">
+                               Title:
+                        </div>     
+                        <div id="id5" ng-model="id5model"  ng-bind=""style="width: 340px; height: 20px; margin-top: 4px; display: block; float: right; font-size: 14px">
+                            <!-- 50 letters -->
+                        </div>
+                    </div>     
+                    <p></p>
+                    <div id="id6" ng-model="id6model" class="div_border_black" style="width: 388px; height: 100px; display: block;">
+                        <div style="width: 120px; height: 20px; display: block; border: 1px black solid; font-size: 16px">Background:</div>
+                        <!-- 200 letters -->
+                        <div id="txt6" class="div_sink_bottom" style="width: 388px; height: 80px; display: block; font-size: 14px"></div>
+                        <img id="img6" class="div_float_top" src="" alt="" style="width: 388px; height: 80px; display: block"/>
+                    </div>     
+                    <p></p>
+                    <div id="id7" ng-model="id7model" class="div_border_black" style="width: 388px; height: 125px; display: block;">
+                        <div style="width: 160px; height: 20px; display: block; border: 1px black solid; font-size: 16px">Current Situation:</div>     
+                        <!-- 300 letters -->
+                        <div id="txt7" class="div_sink_bottom" style="width: 388px; height: 105px; display: block; font-size: 14px"></div>
+                        <img id="img7" class="div_float_top" src="" alt="" style="width: 388px; height: 105px; display: block;"/>
+                    </div>     
+                    <p></p>
+                    <div id="id8" ng-model="id8model" class="div_border_black" style="width: 388px; height: 115px; display: block;">
+                        <div style="width: 120px; height: 20px; display: block; border: 1px black solid; font-size: 16px">Goal:</div>     
+                        <!-- 280 letters -->
+                        <div id="txt8" class="div_sink_bottom" style="width: 388px; height: 95px; display: block; font-size: 14px"></div>
+                        <img id="img8" class="div_float_top" src="" alt="" style="width: 388px; height: 95px; display: block;"/>
+                    </div>     
+                    <p></p>
+                    <div id="id9" ng-model="id9model" class="div_border_black" style="width: 388px; height: 130px; display: block;">
+                        <div style="width: 120px; height: 20px; display: block; border: 1px black solid; font-size: 16px">Analysis:</div>     
+                        <!-- 320 letters -->
+                        <div id="txt9" class="div_sink_bottom" style="width: 388px; height: 110px; display: block; font-size: 14px"></div>
+                        <img id="img9" class="div_float_top" src="" alt="" style="width: 388px; height: 110px; display: block;"/>
+                    </div>     
+                </div>
+                <div style="position: absolute; height: 594px; border: 1px darkgray dashed; margin-left: 420px;">
+     
+                </div>
+                <div style="width: 400px; height: 594px; padding-left: 8px; padding-top: 4px; margin-left: auto; margin-right: 0px; display: block; float: right;">
+                    <div style="width: 388px; height: 30px; display: block;">
+                        <div style="width: 240px; height: 20px; margin-top: 4px; display: block; float: right; font-size: 14px">
+                            <table style="height: 16px; border: 1px solid black; border-collapse: collapse">
+                                <tr>
+                                    <td id="id1" ng-model="id1model" class="div_border_red" style="height: 16px; width: 60px; border-collapse: collapse"></td>
+                                    <td id="id2" ng-model="id2model" class="div_border_black" style="height: 16px; width: 60px; border-collapse: collapse"></td>
+                                    <td id="id3" ng-model="id3model" class="div_border_black" style="height: 16px; width: 60px; border-collapse: collapse"></td>
+                                    <td id="id4" ng-model="id4model" class="div_border_black" style="height: 16px; width: 60px; border-collapse: collapse"></td>
+                                </tr>
+                            </table>
+                        </div>     
+
+                    </div>          
+                    <p></p>
+                    <div id="id10" ng-model="id10model" class="div_border_black" style="width: 388px; height: 175px; display: block;">
+                        <div style="width: 140px; height: 20px; display: block; border: 1px black solid; font-size: 16px">Counter Measures:</div>     
+                        <!-- 450 letters -->
+                        <div id="txt10" class="div_sink_bottom" style="width: 388px; height: 155px; display: block; font-size: 14px"></div>
+                        <img id="img10" class="div_float_top" src="" alt="" style="width: 388px; height: 155px; display: block;"/>
+                    </div>     
+                    <p></p>
+                    <div id="id12" ng-model="id12model" class="div_border_black" style="width: 388px; height: 160px; display: block;">
+                        <div style="width: 120px; height: 20px; display: block; border: 1px black solid; font-size: 16px">Action Plan:</div>     
+                        <!-- 400 letters -->
+                        <div id="txt12" class="div_sink_bottom" style="width: 388px; height: 140px; display: block; font-size: 14px"></div>
+                        <img id="img12" class="div_float_top" src="" alt="" style="width: 388px; height: 140px; display: block;"/>
+                    </div>     
+                    <p></p>
+                    <div id="id13" ng-model="id13model" class="div_border_black" style="width: 388px; height: 150px; display: block;">
+                        <div style="width: 120px; height: 20px; display: block; border: 1px black solid; font-size: 16px">Follow Up:</div>
+                        <!-- 380 letters -->
+                        <div id="txt13" class="div_sink_bottom" style="width: 388px; height: 130px; display: block; font-size: 14px"></div>
+                        <img id="img13" class="div_float_top" src="" alt="" style="width: 388px; height: 130px; display: block;"/>
+                    </div>     
+                </div>
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="js/dialog.js" type="text/javascript"></script>
+        <script src = "lib/backbone/underscore-min.js"></script>
+        <script src = "lib/backbone/backbone-min.js"></script>
+        <script src = "lib/angular/angular.js"></script>
+
+<!--        <script src = "script/page_container.js"></script>
+        <script src = "lib/jquery/jquery-ui.min.js"></script>
+        <script src = "lib/jquery/jquery.min.js"></script>
+        <script src = "script/sample_js.js"></script> 
+        <script src = "storage/sample_json.js"></script>
+        <script src = "script/drawJS.js"></script>-->
+        <script src = "script/learn.js"></script>
+        <script src = "script/canvas.js"></script>
+        <script src = "script/navigate.js"></script>
+        <script src = "script/storage.js"></script>
+    </body>
+</html>
